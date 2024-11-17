@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -19,28 +19,45 @@
             padding: 1rem;
         }
         main {
-            padding: 10px;
+            padding: 20px;
         }
         img {
             max-width: 100%;
             height: auto;
-            border-radius: 5px;
+            border-radius: 8px;
         }
         section {
-            margin-bottom: 5px;
+            margin-bottom: 20px;
         }
         footer {
-            background: #0077be;
-            color: #fff;
-            text-align: center;
-            padding: 1px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        background: #0077be;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
         }
         .highlight {
             font-weight: bold;
             color: #0077be;
+        }
+         /* Estilo para o link do botão */
+         nav a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #0077be;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px auto;
+        }
+        nav a:hover {
+            background-color: #005fa3;
+            transition: background-color 0.3s;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -48,6 +65,9 @@
     <header>
         <h1>Bem-vindo ao Marco Zero do Recife</h1>
     </header>
+    <nav>
+        <a href="outros-pontos-turisticos.html">Conheça outros pontos turísticos do Recife Antigo</a>
+    </nav>
 
     <main>
         <section>
@@ -55,36 +75,20 @@
                 Localizado no coração da cidade do Recife, o <span class="highlight">Marco Zero</span> é um dos principais pontos turísticos da capital pernambucana. 
                 Ele marca o início das medições de distâncias no estado e é um lugar repleto de história e beleza.
             </p>
-            <img src="Praca-do-Maraco-Zero-Rosa-dos-Ventos-Abre-720x511.webp" alt="Marco Zero do Recife">
+            <img src="Praca-do-Maraco-Zero-Rosa-dos-Ventos-Abre-720x511.webp"alt="do Marco Zero do Recife">
         </section>
 
         <section>
             <h2>O que fazer no Marco Zero?</h2>
             <p>
-                O local é perfeito para <span class="highlight">fotos incríveis</span>, especialmente durante o pôr do sol. 
+                O local é perfeito para tirar <span class="highlight">fotos incríveis</span>, especialmente durante o pôr do sol. 
                 Além disso, você pode visitar o <a href="https://pt.wikipedia.org/wiki/Parque_das_Esculturas_Francisco_Brennand" target="_blank">Parque das Esculturas Francisco Brennand</a>, que fica logo em frente, acessível por barco.
             </p>
-            <img src=Torre_de_Cristal_-_Recife-PE(2).jpg alt="Parque das Esculturas Francisco Brennand">
+            <img src="Torre_de_Cristal_-_Recife-PE(2).jpg" alt="Parque das Esculturas Francisco Brennand">
         </section>
     </main>
-
-
     <footer>
         <p>&copy; 2024 Descubra o Recife - Todos os direitos reservados</p>
     </footer>
-
-    main {
-        padding: 20px;
-        margin-bottom: 60px; /* Espaço para evitar sobreposição */
-    }
-    footer {
-        background: #0077be;
-        color: #fff;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-    }    
 </body>
 </html>
