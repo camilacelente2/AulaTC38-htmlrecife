@@ -1,65 +1,64 @@
-/* Reset básico para eliminar margens e espaçamentos padrão do navegador */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Adiciona uma borda em torno do conteúdo */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    padding-bottom: 60px; /* Espaço extra para o rodapé fixo */
+    margin: 0;
+    padding: 0;
+    border: 5px solid #ddd; /* Borda em volta da página */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Alinha o conteúdo centralizado */
 header {
     text-align: center;
-    background-color: #065e28;
+    background-color: #093d0b;
     color: white;
     padding: 20px;
 }
 
-section {
+main {
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
+    margin-bottom: 80px; /* Espaço para garantir que o rodapé não sobreponha */
 }
 
-article {
-    margin-bottom: 30px;
-}
-
-article img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+/* Estilo das imagens dentro de uma caixa */
+img {
+    border: 3px solid #ddd;
+    padding: 10px;
     margin: 10px auto;
+    display: block;
+    max-width: 100%;
 }
 
-nav {
-    text-align: center;
-    margin-top: 20px;
-}
-
+/* Estilo para o botão */
 nav a {
     text-decoration: none;
-    background-color: #074e1f;
+    background-color: #033b16;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
+    font-weight: bold;
     display: inline-block;
-    margin: 10px 0;
+    margin-top: 20px;
+    text-align: center;
 }
 
 nav a:hover {
-    background-color: #0bac25;
+    background-color: #033f1c;
 }
 
+/* Rodapé fixo ajustado */
 footer {
-    background: #044b10;
+    background: #023b0a;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding: 5px 0; /* Reduzido para deixar o rodapé mais fino */
+    position: relative; /* Ajusta a posição para não sobrepor o conteúdo */
     width: 100%;
     bottom: 0;
+    font-size: 0.9rem; /* Fonte menor para economizar espaço */
+    z-index: 5;
 }
